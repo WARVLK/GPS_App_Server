@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ServerDB.Repositories;
 using System.Collections.Generic;
 using System.IO;
 using System.Net.Http;
@@ -12,10 +13,12 @@ namespace Server.Controllers
     public class AuthenticationController : ControllerBase
     {
         private readonly IHttpClientFactory clientFactory;
+        private readonly UserRepository repository;
 
-        public AuthenticationController(IHttpClientFactory clientFactory)
+        public AuthenticationController(IHttpClientFactory clientFactory, UserRepository repository)
         {
             this.clientFactory = clientFactory;
+            this.repository = repository;
         }
 
         [HttpPut]
@@ -42,6 +45,9 @@ namespace Server.Controllers
             };
             var client = clientFactory.CreateClient();
             var response = await client.SendAsync(request);
+
+            repository.AddUser("Jozko", "Mrkvicka", 25, "Velky Meder", "Mafstory 16", "123 45");
+
             if (!response.IsSuccessStatusCode)
             {
                 return StatusCode((int)response.StatusCode);

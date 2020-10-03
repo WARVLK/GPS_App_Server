@@ -1,0 +1,11 @@
+C:\Users\PC\source\repos\GPS_app\Server\ServerDB\bin\Debug\netcoreapp3.1\ServerDB.deps.json
+C:\Users\PC\source\repos\GPS_app\Server\ServerDB\bin\Debug\netcoreapp3.1\ServerDB.dll
+C:\Users\PC\source\repos\GPS_app\Server\ServerDB\obj\Debug\netcoreapp3.1\ServerDB.AssemblyInfoInputs.cache
+C:\Users\PC\source\repos\GPS_app\Server\ServerDB\obj\Debug\netcoreapp3.1\ServerDB.AssemblyInfo.cs
+C:\Users\PC\source\repos\GPS_app\Server\ServerDB\bin\Debug\netcoreapp3.1\ServerDB.runtimeconfig.json
+C:\Users\PC\source\repos\GPS_app\Server\ServerDB\bin\Debug\netcoreapp3.1\ServerDB.runtimeconfig.dev.json
+C:\Users\PC\source\repos\GPS_app\Server\ServerDB\bin\Debug\netcoreapp3.1\ServerDB.pdb
+C:\Users\PC\source\repos\GPS_app\Server\ServerDB\obj\Debug\netcoreapp3.1\EFCoreSqlServerNetTopologySuite.cs
+C:\Users\PC\source\repos\GPS_app\Server\ServerDB\obj\Debug\netcoreapp3.1\ServerDB.dll
+C:\Users\PC\source\repos\GPS_app\Server\ServerDB\obj\Debug\netcoreapp3.1\ServerDB.pdb
+C:\Users\PC\source\repos\GPS_app\Server\ServerDB\obj\Debug\netcoreapp3.1\ServerDB.csprojAssemblyReference.cache

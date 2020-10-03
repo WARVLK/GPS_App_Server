@@ -6,10 +6,13 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using ServerDB;
+using ServerDB.Repositories;
 
 namespace Server
 {
@@ -27,6 +30,8 @@ namespace Server
         {
             services.AddHttpClient();
             services.AddControllers();
+            services.AddDbContext<ServerDataBase>(options => options.UseSqlServer("server=(localdb)\\MSSQLLocalDB;database=ActivityDB;Trusted_Connection=true"));
+            services.AddTransient<UserRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
